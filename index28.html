@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <title>Горячие клавиши</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com/%22%3E" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="flex-game">
+    <div class="cent">
+      <h1 class="cen">Отображение всех папок, вложенных в выделенную папку</h1>
+      <div>
+        <a href="index29.html" class="button1 green" id="button-1">*</a>
+        <a href="#" class="button1 green" id="button-2">F5</a>
+        <a href="#" class="button1 green" id="button-3">Backspace</a>
+      </div>
+    </div>
+    <script src="js/jquery-3.3.1.js"></script>
+    <script>
+      $(function () {
+        $("#button-2").click(function () {
+          $(this).removeClass("green");
+          $(this).addClass("red");
+        });
+      });
+      $(function () {
+        $("#button-3").click(function () {
+          $(this).removeClass("green");
+          $(this).addClass("red");
+        });
+      });
+    </script>
+  </body>
+</html>

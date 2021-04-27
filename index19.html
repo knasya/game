@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <title>Горячие клавиши</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com/%22%3E" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="flex-game">
+    <div class="cent">
+      <h1 class="cen">Перемещение в начало-конец документа</h1>
+    </div>
+    <div class="modal modal-window-close">
+      <div class="modal-dialog">
+        <div class="close-header">
+          <a href="index.html" class="close"
+            ><button class="cclose first">Главная</button></a
+          >
+          <a href="index20.html" class="close"
+            ><button class="cclose second">Следующий уровень</button></a
+          >
+        </div>
+        <div class="modal-main">
+          <h1>Поздравляю!</h1>
+          <br />
+          <h2>Вы прошли уровень &laquo;РАБОТА С ТЕКСТОМ&raquo;</h2>
+          <img src="img/win.gif" alt="win" width="250px" height="200px" />
+        </div>
+      </div>
+    </div>
+    <script src="js/jquery-3.3.1.js"></script>
+    <script src="js/shortcut.js"></script>
+    <script>
+      shortcut.add("ctrl+home", function () {
+        $(".modal").removeClass("modal-window-close");
+        $("div.modal").addClass("is-open");
+      });
+      shortcut.add("ctrl+end", function () {
+        $(".modal").removeClass("modal-window-close");
+        $("div.modal").addClass("is-open");
+      });
+    </script>
+  </body>
+</html>
